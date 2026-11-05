@@ -88,7 +88,7 @@ const SITE = {
     whatsapp.setAttribute("aria-label", "Chat with Kissing Tree on WhatsApp");
     whatsapp.title = "Click to chat";
     whatsapp.innerHTML =
-      '<img src="assets/tropical-sunset-island-silhouette.png" alt="" aria-hidden="true"><strong>Click to chat</strong>';
+      '<img src="assets/cottage-chat-logo.png" alt="" aria-hidden="true"><strong>Click to chat</strong>';
     document.body.appendChild(whatsapp);
   }
 })();
