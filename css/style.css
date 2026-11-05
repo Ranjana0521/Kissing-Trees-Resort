@@ -2518,9 +2518,8 @@ td .small {
   z-index: 20;
   display: grid;
   place-items: center;
-  width: 82px;
-  height: 82px;
-  border-radius: 50%;
+  width: 96px;
+  height: 96px;
   color: #fff;
   transition: transform 0.2s;
 }
@@ -2530,9 +2529,8 @@ td .small {
 }
 .whatsapp-float img {
   display: block;
-  width: 82px;
-  height: 82px;
-  border-radius: 50%;
+  width: 96px;
+  height: 96px;
   object-fit: contain;
 }
 .whatsapp-float strong {
