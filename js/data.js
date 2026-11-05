@@ -87,7 +87,7 @@ const SITE = {
     whatsapp.rel = "noopener";
     whatsapp.setAttribute("aria-label", "Chat with Kissing Tree on WhatsApp");
     whatsapp.innerHTML =
-      '<img src="assets/cottage-chat-logo.png" alt="Chat with Kissing Tree on WhatsApp">';
+      '<img src="assets/cottage-chat-logo.png" alt="Chat with Kissing Tree on WhatsApp"><strong>Click to chat</strong>';
     document.body.appendChild(whatsapp);
   }
 })();
