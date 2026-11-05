@@ -2536,24 +2536,5 @@ td .small {
   object-fit: contain;
 }
 .whatsapp-float strong {
-  position: absolute;
-  right: 92px;
-  white-space: nowrap;
-  padding: 7px 10px;
-  border-radius: 4px;
-  background: #173f34;
-  color: #fff;
-  font-size: 11px;
-  font-weight: 700;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateX(5px);
-  transition:
-    opacity 0.2s,
-    transform 0.2s;
-}
-.whatsapp-float:hover strong,
-.whatsapp-float:focus-visible strong {
-  opacity: 1;
-  transform: translateX(0);
+  display: none;
 }
