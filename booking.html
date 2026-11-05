@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f7f3e9" />
+    <meta
+      name="description"
+      content="Send a personal stay request to Kissing Tree cottage homestay near Dornahalli, Mysuru."
+    />
+    <meta name="robots" content="index, follow" />
+    <title>Request a Stay — Kissing Tree</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="form-page">
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Kissing Tree home">
+        <span class="wordmark-icon">KT</span>
+        <span>
+          Kissing Tree
+          <small>PRIVATE COTTAGE HOMESTAY</small>
+        </span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="amenities.html">Amenities</a>
+        <a href="pricing.html">Rates</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ &amp; Rules</a>
+        <a class="nav-cta" href="booking.html">
+          Request to book
+          <span>↗</span>
+        </a>
+      </nav>
+    </header>
+    <main class="booking-main">
+      <div class="booking-topline">
+        <a class="back-link" href="index.html">
+          KISSING TREE
+          <span>/</span>
+          BOOKING REQUEST
+        </a>
+        <span class="demo-tag">NO ONLINE PAYMENT</span>
+      </div>
+      <div class="booking-layout">
+        <section class="booking-form-panel">
+          <p class="eyebrow">A PERSONAL REQUEST, NEVER INSTANT BOOKING</p>
+          <h1>
+            Let’s plan
+            <br />
+            your
+            <em>stay.</em>
+          </h1>
+          <p class="booking-lead">
+            First, a little about your group. Then your dates and contact
+            details. The owner confirms every stay personally.
+          </p>
+          <div class="progress-track">
+            <span class="progress-active"></span>
+            <span></span>
+          </div>
+          <div class="progress-label">
+            <span id="progressLabel">01 — GUEST PROFILE</span>
+            <span>02 STEPS</span>
+          </div>
+          <div id="gateResult" class="result" role="alert"></div>
+          <form id="step1">
+            <fieldset>
+              <legend>
+                <span class="legend-number">01</span>
+                Who’s travelling?
+              </legend>
+              <label>
+                Guest type
+                <select id="guestType" required>
+                  <option value="">Choose the closest fit</option>
+                  <option>Family (with parents / kids / elders)</option>
+                  <option>Married Couple</option>
+                  <option>Women's Group</option>
+                  <option>Solo / Corporate Work Stay</option>
+                  <option>Mixed Family Group</option>
+                </select>
+              </label>
+              <div class="row3">
+                <label>
+                  Men
+                  <input id="men" type="number" min="0" value="0" required />
+                </label>
+                <label>
+                  Women
+                  <input id="women" type="number" min="0" value="0" required />
+                </label>
+                <label>
+                  Children
+                  <input
+                    id="children"
+                    type="number"
+                    min="0"
+                    value="0"
+                    required
+                  />
+                </label>
+              </div>
+              <label>
+                Purpose of stay
+                <select id="purpose" required>
+                  <option value="">Choose a purpose</option>
+                  <option>Family Vacation</option>
+                  <option>Anniversary / Couple Trip</option>
+                  <option>Work / Business</option>
+                  <option>Celebration / Party</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label class="check">
+                <input type="checkbox" id="declare" required />
+                <span>
+                  I confirm this is not a bachelor/stag party group and all
+                  guest details are correct. Booking can be cancelled at
+                  check-in if the group is different.
+                </span>
+              </label>
+              <button class="button form-next" type="submit">
+                Check group &amp; continue
+                <span>↗</span>
+              </button>
+            </fieldset>
+          </form>
+          <form id="step2">
+            <fieldset>
+              <legend>
+                <span class="legend-number">02</span>
+                Your dates &amp; details
+              </legend>
+              <div class="row2">
+                <label>
+                  Check-in
+                  <input id="checkin" type="date" required />
+                </label>
+                <label>
+                  Check-out
+                  <input id="checkout" type="date" required />
+                </label>
+              </div>
+              <div class="row2">
+                <label>
+                  Your name
+                  <input
+                    id="gname"
+                    type="text"
+                    autocomplete="name"
+                    required
+                    placeholder="Full name"
+                  />
+                </label>
+                <label>
+                  Phone / WhatsApp
+                  <input
+                    id="gphone"
+                    type="tel"
+                    autocomplete="tel"
+                    required
+                    placeholder="Your contact number"
+                  />
+                </label>
+              </div>
+              <label>
+                Names and ages of all guests
+                <textarea
+                  id="glist"
+                  rows="4"
+                  required
+                  placeholder="Example: Asha (38), Ravi (40), Meera (9)"
+                ></textarea>
+              </label>
+              <label>
+                ID type of main guest
+                <span class="label-soft">(ID checked at check-in)</span>
+                <select id="gid">
+                  <option>Passport</option>
+                  <option>Driving Licence</option>
+                  <option>Voter ID</option>
+                  <option>Other valid photo ID</option>
+                </select>
+              </label>
+              <div class="privacy-note">
+                <span>i</span>
+                <p>
+                  We don’t collect ID numbers here. At check-in, IDs must match
+                  the approved guest list. A refundable security deposit
+                  applies. No parties or outside guests.
+                </p>
+              </div>
+              <button class="button form-next" type="submit">
+                Send booking request
+                <span>↗</span>
+              </button>
+            </fieldset>
+          </form>
+          <div
+            id="sentResult"
+            class="result success-result"
+            role="status"
+          ></div>
+          <p class="form-footnote">
+            By sending a request, you’re asking the owner to review your dates
+            and guest details. No payment is taken here.
+          </p>
+        </section>
+        <aside class="booking-aside">
+          <div class="aside-art">
+            <span class="aside-sun"></span>
+            <span class="aside-water"></span>
+            <span class="aside-art-label">A LITTLE COUNTRYSIDE QUIET</span>
+          </div>
+          <div class="aside-content">
+            <p class="eyebrow">THE KISSING TREE WAY</p>
+            <h2>
+              Good stays
+              <br />
+              start with
+              <em>trust.</em>
+            </h2>
+            <ul>
+              <li>
+                <span>01</span>
+                Request sent to the owner
+              </li>
+              <li>
+                <span>02</span>
+                Personal review on WhatsApp
+              </li>
+              <li>
+                <span>03</span>
+                Payment link only after approval
+              </li>
+            </ul>
+            <div class="aside-rule">
+              <strong>House rules, up front.</strong>
+              <p>
+                We host family stays, married couples and women’s groups.
+                Bachelor / stag groups are not hosted.
+              </p>
+            </div>
+            <a class="text-link" href="faq.html#rules">
+              Read all house rules
+              <span>↗</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="wordmark" href="index.html">
+            <span class="wordmark-icon">KT</span>
+            <span>
+              Kissing Tree
+              <small>PRIVATE COTTAGE HOMESTAY</small>
+            </span>
+          </a>
+          <p class="footer-tagline">
+            A quieter kind of getaway for families, couples and meaningful time
+            together.
+          </p>
+        </div>
+        <div>
+          <span class="footer-heading">EXPLORE</span>
+          <nav class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="amenities.html">Amenities</a>
+            <a href="pricing.html">Rates</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ &amp; Rules</a>
+          </nav>
+        </div>
+        <div class="footer-contact">
+          <span class="footer-heading">PLAN YOUR STAY</span>
+          <a class="button" href="booking.html">
+            Request to book
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Kissing Tree</span>
+        <span>Owner-approved stays · No instant payment</span>
+      </div>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/gate.js"></script>
+    <script src="js/booking.js"></script>
+  </body>
+</html>

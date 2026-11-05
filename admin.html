@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f7f3e9" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <title>Owner Desk — Kissing Tree</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="admin-page">
+    <header class="topbar">
+      <a
+        class="wordmark"
+        href="index.html"
+        aria-label="Kissing Tree owner desk"
+      >
+        <span class="wordmark-icon">KT</span>
+        <span>
+          Kissing Tree
+          <small>OWNER DESK · DEMO</small>
+        </span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Public website</a>
+        <a href="booking.html">Booking page</a>
+        <button id="logoutBtn" class="nav-login-out" type="button" hidden>
+          Sign out
+        </button>
+      </nav>
+    </header>
+    <main class="dashboard-main">
+      <section id="loginScreen" class="login-screen">
+        <div class="login-art">
+          <span class="aside-sun"></span>
+          <span class="aside-water"></span>
+          <span class="aside-art-label">PRIVATE HOST ACCESS</span>
+        </div>
+        <div class="login-content">
+          <p class="eyebrow">OWNER ACCESS</p>
+          <h1>
+            Welcome
+            <br />
+            <em>back.</em>
+          </h1>
+          <p>Sign in to view local booking requests.</p>
+          <form id="ownerLogin">
+            <label>
+              Owner ID
+              <input id="ownerId" autocomplete="username" required />
+            </label>
+            <label>
+              Password
+              <input
+                id="ownerPassword"
+                type="password"
+                autocomplete="current-password"
+                required
+              />
+            </label>
+            <button class="button" type="submit">
+              Sign in
+              <span>↗</span>
+            </button>
+            <p id="loginError" class="login-error" role="alert"></p>
+          </form>
+          <div class="security-note">
+            <strong>DEMO LOGIN — NOT SECURE</strong>
+            <p>
+              This static login only hides the page. Credentials and booking
+              data are visible in browser files and localStorage. Do not use
+              real guest data or rely on this for production security.
+            </p>
+            <small>
+              Sample ID:
+              <code id="demoUser"></code>
+              · Sample password:
+              <code id="demoPassword"></code>
+            </small>
+          </div>
+        </div>
+      </section>
+      <section id="adminContent" class="admin-content" hidden>
+        <div class="dashboard-heading">
+          <div>
+            <p class="eyebrow">PRIVATE HOST VIEW · THIS BROWSER ONLY</p>
+            <h1>
+              Owner
+              <em>desk.</em>
+            </h1>
+            <p class="dashboard-intro">
+              Review each guest request, check the group profile and decide when
+              you’re ready.
+            </p>
+          </div>
+          <a class="button dashboard-booking-link" href="booking.html">
+            Open booking flow
+            <span>↗</span>
+          </a>
+        </div>
+        <div class="dashboard-notice">
+          <span class="notice-icon">i</span>
+          <p>
+            Requests live in this browser’s localStorage. Approving a request
+            reveals a payment link; it does not process payment. Blocked groups
+            never appear here.
+          </p>
+        </div>
+        <section class="dashboard-section">
+          <div class="table-heading">
+            <div>
+              <p class="eyebrow">INCOMING STAYS</p>
+              <h2>Booking requests</h2>
+            </div>
+            <span class="local-indicator">
+              <i></i>
+              LOCAL DATA
+            </span>
+          </div>
+          <div class="table-frame">
+            <table>
+              <thead>
+                <tr>
+                  <th>Reference / received</th>
+                  <th>Guest / group</th>
+                  <th>Dates</th>
+                  <th>Gate review</th>
+                  <th>Owner decision</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="rows"></tbody>
+            </table>
+          </div>
+          <div class="dashboard-bottom">
+            <p>Two sample requests load when this panel is empty.</p>
+            <button class="button text-button" id="clearBtn" type="button">
+              Clear all requests
+              <span>↗</span>
+            </button>
+          </div>
+        </section>
+        <section class="owner-reminder">
+          <span class="reminder-mark">KT</span>
+          <div>
+            <p class="eyebrow">CHECK-IN REMINDER</p>
+            <p>
+              Verify guest IDs against the approved guest list. A refundable
+              security deposit applies. No parties or outside guests.
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="wordmark" href="index.html">
+            <span class="wordmark-icon">KT</span>
+            <span>
+              Kissing Tree
+              <small>PRIVATE COTTAGE HOMESTAY</small>
+            </span>
+          </a>
+          <p class="footer-tagline">
+            A quieter kind of getaway for families, couples and meaningful time
+            together.
+          </p>
+        </div>
+        <div>
+          <span class="footer-heading">EXPLORE</span>
+          <nav class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="amenities.html">Amenities</a>
+            <a href="pricing.html">Rates</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ &amp; Rules</a>
+          </nav>
+        </div>
+        <div class="footer-contact">
+          <span class="footer-heading">PLAN YOUR STAY</span>
+          <a class="button" href="booking.html">
+            Request to book
+            <span>↗</span>
+          </a>
+          <a href="admin.html">Owner desk</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Kissing Tree</span>
+        <span>Owner-approved stays · No instant payment</span>
+      </div>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

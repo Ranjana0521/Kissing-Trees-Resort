@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace https://your-domain.example with the real deployed domain before submitting. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://your-domain.example/</loc></url>
+  <url><loc>https://your-domain.example/about.html</loc></url>
+  <url><loc>https://your-domain.example/gallery.html</loc></url>
+  <url><loc>https://your-domain.example/amenities.html</loc></url>
+  <url><loc>https://your-domain.example/pricing.html</loc></url>
+  <url><loc>https://your-domain.example/contact.html</loc></url>
+  <url><loc>https://your-domain.example/faq.html</loc></url>
+  <url><loc>https://your-domain.example/booking.html</loc></url>
+</urlset>
