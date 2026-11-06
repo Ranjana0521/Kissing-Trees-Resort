@@ -1,19 +1,19 @@
 // ============================================================
-// KISSING TREE — SITE CONFIG
+// KISSING TREES — SITE CONFIG
 // ⚠️ PLACEHOLDER DATA: every value marked SAMPLE below is a demo
 // value. Replace with the client's real details after they confirm
 // (location, tariff, deposit, WhatsApp number, photos).
 // ============================================================
 const SITE = {
-  name: "Kissing Tree",
+  name: "Kissing Trees",
   tagline: "A Private Cottage Homestay for Families & Couples",
   location: "Near Dornahalli, KR Nagar, Mysuru district, Karnataka",
   nearbyLandscape: "10 km cycling track to the KRS backwaters",
   whatsapp: "919256725871",
-  email: "stay@kissingtree.example", // SAMPLE
+  email: "stay@kissingtrees.example", // SAMPLE
   socials: {
-    instagram: "https://www.instagram.com/kissingtree/",
-    x: "https://x.com/kissingtree",
+    instagram: "https://www.instagram.com/kissingtrees/",
+    x: "https://x.com/kissingtrees",
     facebook: "https://www.facebook.com/kissingtrees",
   }, // SAMPLE profile links
   maxGuests: 10, // SAMPLE
@@ -43,6 +43,7 @@ const SITE = {
 (function () {
   if (!document.body) return;
   const replacements = [
+    ["Kissing Trees", SITE.name],
     ["Kissing Tree", SITE.name],
     ["A Private Cottage Homestay for Families & Couples", SITE.tagline],
   ];
@@ -77,7 +78,7 @@ const SITE = {
     const whatsapp = document.createElement("a");
     const whatsappNumber = String(SITE.whatsapp).replace(/\D/g, "");
     const whatsappMessage =
-      "Hello, I am interested in staying at Kissing Tree. Please share availability and booking details.";
+      "Hello, I am interested in staying at Kissing Trees. Please share availability and booking details.";
     whatsapp.className = "whatsapp-float";
     whatsapp.href =
       whatsappNumber.length >= 10
@@ -85,9 +86,9 @@ const SITE = {
         : "contact.html";
     whatsapp.target = whatsappNumber.length >= 10 ? "_blank" : "_self";
     whatsapp.rel = "noopener";
-    whatsapp.setAttribute("aria-label", "Chat with Kissing Tree on WhatsApp");
+    whatsapp.setAttribute("aria-label", "Chat with Kissing Trees on WhatsApp");
     whatsapp.innerHTML =
-      '<img src="assets/cottage-chat-logo.png" alt="Chat with Kissing Tree on WhatsApp"><strong>Click to chat</strong>';
+      '<img src="assets/cottage-chat-logo.png" alt="Chat with Kissing Trees on WhatsApp"><strong>Click to chat</strong>';
     document.body.appendChild(whatsapp);
   }
 })();

@@ -1,5 +1,5 @@
 // ============================================================
-// KISSING TREE — THE SMART GUEST GATE (Layer 2 of the 3-layer system)
+// KISSING TREES — THE SMART GUEST GATE (Layer 2 of the 3-layer system)
 // Pure logic, no DOM — also testable from Node: require('./gate.js')
 //
 // Rules (from the approved poster solution, 2026-11-03):
@@ -49,7 +49,7 @@ function classifyBooking(input) {
       status: "BLOCKED",
       reason: "All-male group of 2+ with party purpose.",
       message:
-        "Thank you for your interest. Kissing Tree is reserved only for families and couples, so we're unable to host bachelor / stag groups. We hope you find a place that fits your trip better.",
+        "Thank you for your interest. Kissing Trees is reserved only for families and couples, so we're unable to host bachelor / stag groups. We hope you find a place that fits your trip better.",
     };
   }
 
